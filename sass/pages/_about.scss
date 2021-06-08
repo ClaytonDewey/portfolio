@@ -1,0 +1,59 @@
+#about {
+    img.about {
+        height: auto;
+        max-width: 100%;
+        display: block;
+        margin: auto;
+        border: 1px solid $complementary;
+        border-radius: 4px;
+        padding: 1rem;
+    }
+    figure {
+        border: 1px solid $complementary;
+        border-radius: 4px;
+        padding: 1rem;
+
+        embed {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    a:not(.btn) {
+        color: darken($blue, 10%);
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    figcaption {
+        font-weight: 700;
+        text-align: center;
+    }
+
+    article {
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            li {
+                flex: 1 0 50%;
+                margin-bottom: 3rem;
+                a {
+                    display: inline-block;
+                }
+            }
+
+            @media #{$mq-small} {
+                li {
+                    flex: 0 0 auto;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+}

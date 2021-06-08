@@ -1,0 +1,39 @@
+@import "abstracts/variables";
+@import "abstracts/normalize";
+@import "abstracts/mixins";
+@import "abstracts/animations";
+
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/button";
+@import "components/card";
+@import "components/container";
+@import "components/form";
+@import "components/grid";
+
+@import "layout/header";
+@import "layout/nav";
+
+@import "pages/about";
+@import "pages/services";
+@import "pages/portfolio";
+@import "pages/contact";
+
+@import "layout/footer";
+
+main section:nth-child(odd) {
+    background-color: darken($white, 10%);
+}
+
+#about,
+#services,
+#portfolio,
+#contact {
+    padding: 10rem 1rem 3rem;
+
+    @media #{$mq-medium} {
+        padding: 5rem;
+    }
+}

@@ -1,0 +1,96 @@
+html {
+    // This defines what 1rem is.
+    font-size: 62.5%; // 1rem = 10px;
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    font-size: $font-size-base-mobile;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    // background-color: $gray-900;
+    // color: $white;
+
+    @media #{$mq-medium} {
+        font-size: $font-size-base;
+    }
+}
+
+h1 {
+    font-weight: 700;
+    text-align: center;
+}
+
+a {
+    color: darken($blue, 8%);
+    text-decoration: none;
+    background-color: transparent;
+
+    &:hover {
+        color: darken($blue, 8%);
+        text-decoration: underline;
+    }
+}
+
+p,
+li {
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+blockquote {
+    font-size: 1.6rem;
+    width: 80%;
+    margin: 50px auto;
+    font-family: "Open Sans";
+    font-style: italic;
+    color: #555555;
+    padding: 1rem 2.5rem 1rem 6rem;
+    border-left: 8px solid $blue;
+    line-height: 1.6;
+    position: relative;
+    background-color: darken(#fff, 5%);
+}
+
+blockquote::before {
+    font-family: Arial;
+    content: "\201C";
+    color: $blue;
+    font-size: 7rem;
+    position: absolute;
+    left: 10px;
+    top: -10px;
+}
+
+blockquote::after {
+    content: "";
+}
+
+blockquote span {
+    display: block;
+    color: #333333;
+    font-style: normal;
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+section {
+    h2 {
+        display: inline-block;
+        width: auto;
+        padding-bottom: 2rem;
+        margin-bottom: 3rem;
+        margin-left: 2rem;
+        border-bottom: 5px solid $complementary;
+
+        span {
+            font-size: 60%;
+            font-weight: 300;
+        }
+    }
+}

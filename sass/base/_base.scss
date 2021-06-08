@@ -1,0 +1,33 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html,
+body {
+    margin: 0px auto;
+    width: 100%;
+    box-sizing: border-box;
+    // background: $off-white;
+    // color: $primary-color;
+}
+
+body {
+    position: relative;
+
+    @media #{$mq-medium} {
+    }
+}
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}

@@ -1,0 +1,70 @@
+.content {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+
+    @media #{$mq-medium} {
+        flex-flow: row wrap;
+
+        &__left {
+            &-60 {
+                flex: 1 0 60%;
+            }
+
+            &-40 {
+                flex: 1 0 60%;
+            }
+        }
+
+        &__right {
+            &-60 {
+                flex: 1 0 60%;
+            }
+
+            &-40 {
+                flex: 1 0 40%;
+            }
+        }
+
+        &__50 {
+            flex: 1 0 50%;
+        }
+    }
+}
+
+.container__right {
+    @media #{$mq-medium} {
+        padding-left: 30rem;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+
+        &:not(.closed) {
+            padding-left: 0;
+        }
+    }
+}
+
+.row {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+
+    @media #{$mq-small} {
+        flex-flow: row wrap;
+    }
+}
+
+.col {
+    flex: 1 1 100%;
+
+    @media #{$mq-small} {
+        flex: 0 1 50%;
+    }
+
+    @media #{$mq-medium} {
+        flex: 0 1 33.3333%;
+    }
+}

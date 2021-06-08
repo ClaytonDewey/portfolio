@@ -1,0 +1,70 @@
+.grid {
+    display: grid;
+    grid-template-columns: 2.5% 95% 2.5%;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+
+    @media #{$mq-small} {
+        grid-template-columns: 1fr 77.7rem 1fr;
+    }
+
+    &-col {
+        height: 21.1rem;
+
+        &.atl {
+            &:first-child {
+                background-image: url("../img/leftBackground.jpg");
+                background-repeat: no-repeat;
+                background-position: top right;
+            }
+
+            &:last-child {
+                background-image: url("../img/rightBackground.jpg");
+                background-repeat: no-repeat;
+                background-position: top left;
+            }
+        }
+
+        &.band {
+            &:first-child {
+                background-image: url("../img/leftBackground.jpg");
+                background-repeat: no-repeat;
+                background-position: top right;
+            }
+
+            &:last-child {
+                background-image: url("../img/rightBackground.jpg");
+                background-repeat: no-repeat;
+                background-position: top left;
+            }
+        }
+
+        &.euphoria {
+            &:first-child {
+                background-image: url("../img/leftBackground.jpg");
+                background-repeat: no-repeat;
+                background-position: top right;
+            }
+
+            &:last-child {
+                background-image: url("../img/rightBackground.jpg");
+                background-repeat: no-repeat;
+                background-position: top left;
+            }
+        }
+
+        &.disease {
+            &:first-child {
+                background-image: url("../img/leftBackground.jpg");
+                background-repeat: no-repeat;
+                background-position: top right;
+            }
+
+            &:last-child {
+                background-image: url("../img/rightBackground.jpg");
+                background-repeat: no-repeat;
+                background-position: top left;
+            }
+        }
+    }
+}

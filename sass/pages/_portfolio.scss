@@ -1,0 +1,225 @@
+#portfolio {
+    //
+}
+
+#about {
+    article {
+        max-width: 100%;
+        padding: 0 2rem;
+    }
+
+    ul {
+        padding-left: 3rem;
+
+        li {
+            margin-bottom: 5px;
+        }
+    }
+}
+
+// NFWS BANNERS
+.banner {
+    height: 16.9rem;
+    width: 100%;
+    // max-width: 85rem;
+    overflow: hidden;
+    position: relative;
+    background-image: url("../img/header.jpg"), url("../img/topNavBar.jpg");
+    background-repeat: no-repeat;
+    background-position: top center, bottom center;
+
+    &-wrap {
+        margin: auto;
+        margin-top: 2.8rem;
+        height: 13rem;
+        width: 100%;
+        max-width: 77.7rem;
+        overflow: hidden;
+        position: relative;
+
+        &.euphoria {
+            background-image: url("../nfws/img/banner/euphoria/bgnd.png");
+            background-repeat: no-repeat;
+            background-position: top left;
+
+            img.logo {
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 15;
+            }
+        }
+
+        &.disease {
+            background-image: url("../nfws/img/banner/disease/Bgnd.png");
+            background-repeat: no-repeat;
+            background-position: top left;
+        }
+
+        &.atl {
+            background-color: black;
+
+            img {
+                position: absolute;
+                top: 0;
+            }
+
+            // Background guys
+            .first-row {
+                height: 13rem;
+                width: 243.9rem;
+                background-image: url("../nfws/img/atl/frontrow.png");
+                background-repeat: repeat-x;
+                animation: slideRight 40s linear infinite;
+                position: absolute;
+                top: 0;
+            }
+            .second-row {
+                height: 13rem;
+                width: 243.9rem;
+                background-image: url("../nfws/img/atl/2ndrow.png");
+                background-repeat: repeat-x;
+                animation: slideLeft 40s linear infinite;
+                position: absolute;
+                top: 0;
+            }
+            .third-row {
+                height: 13rem;
+                width: 243.9rem;
+                background-image: url("../nfws/img/atl/3rdrow.png");
+                background-repeat: repeat-x;
+                animation: slideRight 40s linear infinite;
+                position: absolute;
+                top: 0;
+            }
+            .fourth-row {
+                height: 13rem;
+                width: 243.9rem;
+                background-image: url("../nfws/img/atl/4throw.png");
+                background-repeat: repeat-x;
+                animation: slideLeft 40s linear infinite;
+                position: absolute;
+                top: 0;
+            }
+            .fifth-row {
+                height: 13rem;
+                width: 243.9rem;
+                background-image: url("../nfws/img/atl/5throw.png");
+                background-repeat: repeat-x;
+                animation: slideRight 40s linear infinite;
+                position: absolute;
+                top: 0;
+            }
+
+            .logo,
+            .album {
+                display: none;
+
+                @media #{$mq-small} {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+.frame-border {
+    position: absolute;
+    z-index: 200;
+}
+
+.scream {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.ToonGuys {
+    display: none !important;
+
+    @media #{$mq-small} {
+        display: block !important;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 0;
+    }
+}
+
+.gfCartoon,
+.gfCartoonBlur {
+    display: none !important;
+    @media #{$mq-small} {
+        display: block !important;
+    }
+}
+
+.spiral {
+    //   display: none;
+    position: absolute;
+    left: 2rem;
+    top: -8.2rem;
+    z-index: 1;
+
+    animation: rotation 3.25s infinite linear;
+}
+
+.logo-zoom {
+    animation: fadein 1s;
+    animation-delay: 2s;
+
+    opacity: 0;
+    animation-fill-mode: forwards;
+
+    &-1 {
+        animation: fadeinout 1.25s;
+        animation-delay: 1.5s;
+        opacity: 0;
+        animation-fill-mode: forwards;
+    }
+    &-2 {
+        animation: fadeinout 1s;
+        animation-delay: 1.75s;
+        opacity: 0;
+        animation-fill-mode: forwards;
+    }
+}
+
+.fadeinout {
+    animation: fadeinout 1s;
+    animation-delay: 1s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.centered {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 3px;
+    z-index: 10;
+    height: 2.8rem;
+    width: 26.1rem;
+    opacity: 0;
+    animation: fadein 0.5s;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+
+    .animated {
+        animation-duration: 0.5s;
+        animation-delay: 2.5s !important;
+    }
+}
+
+.center-top {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.guy-glow {
+    opacity: 0;
+    animation: guyGlow 16s linear infinite;
+}

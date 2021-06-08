@@ -1,0 +1,37 @@
+.card {
+    margin: 1rem;
+    border: 1px solid $gray-500;
+    height: auto;
+    box-sizing: border-box;
+    background-color: $white;
+    display: flex;
+    flex-flow: column nowrap;
+    margin-bottom: 4rem;
+
+    &__header {
+        padding: 1.5rem;
+        color: $complementary;
+        border-bottom: 1px solid $complementary;
+    }
+
+    &__body {
+        img {
+            display: block;
+            max-width: 100%;
+            margin: auto;
+        }
+    }
+
+    &__footer {
+        border-top: 1px solid $complementary;
+        padding: 1rem;
+    }
+
+    @media #{$mq-medium} {
+        margin-bottom: 4rem;
+    }
+
+    img {
+        padding: 1rem;
+    }
+}
