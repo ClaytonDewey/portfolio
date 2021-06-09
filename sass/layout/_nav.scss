@@ -1,6 +1,6 @@
 .nav {
-    background-color: $complementary;
-    color: $white;
+    background-color: $primary-300;
+    color: $primary-100;
     height: 7rem;
     transition: all 0.3s ease;
     position: fixed;
@@ -40,7 +40,7 @@
             font-weight: 400;
             padding: 5px 1.5rem;
             color: $white;
-            background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $primary 50%);
+            background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $secondary-300 50%);
             background-size: 230%;
             transition: all 0.4s ease;
         }
@@ -92,7 +92,7 @@
     top: 1rem;
     font-size: 2rem;
     line-height: 1;
-    background-color: $primary;
+    background-color: $secondary-300;
     border: none;
     z-index: 200;
     padding: 1.5rem;
@@ -103,8 +103,12 @@
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 
+    &:hover {
+        background-color: $secondary-400;
+    }
+
     .icon-bar {
-        background-color: $white;
+        background-color: $secondary-100;
         display: block;
         width: 2.2rem;
         height: 2px;
@@ -162,7 +166,7 @@
         }
 
         .icon-bar {
-            background-color: $white;
+            background-color: $secondary-100;
             display: block;
             width: 2.2rem;
             height: 2px;

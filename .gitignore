@@ -1,6 +1,9 @@
 node_modules
-**/css
-**/img
+/css/font
+/css/bootstrap.css
+/css/style.comp.css
+/css/style.concat.css
+/css/style.prefix.css
 **/images
 **/downloads
 **/harvest-hills
@@ -16,5 +19,8 @@ favicon.gif
 favicon.ico
 reCaptcha
 workspace.code-workspace
+portfolio.sublime-project
+portfolio.sublime-workspace
 .DS_Store
 contact.php
+**/files

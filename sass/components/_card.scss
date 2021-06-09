@@ -1,6 +1,6 @@
 .card {
     margin: 1rem;
-    border: 1px solid $gray-500;
+    border: 1px solid $primary-300;
     height: auto;
     box-sizing: border-box;
     background-color: $white;
@@ -10,8 +10,8 @@
 
     &__header {
         padding: 1.5rem;
-        color: $complementary;
-        border-bottom: 1px solid $complementary;
+        color: $primary-300;
+        border-bottom: 1px solid $primary-300;
     }
 
     &__body {
@@ -23,7 +23,7 @@
     }
 
     &__footer {
-        border-top: 1px solid $complementary;
+        border-top: 1px solid $primary-300;
         padding: 1rem;
     }
 

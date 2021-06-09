@@ -44,25 +44,25 @@
 
     &-primary {
         color: $white;
-        background-color: $primary;
-        border-color: $primary;
+        background-color: $primary-300;
+        border-color: $primary-300;
 
         &:hover {
             color: $white;
-            background-color: darken($primary, 8%);
-            border-color: darken($primary, 4%);
+            background-color: $primary-400;
+            border-color: $primary-400;
         }
     }
 
     &-complementary {
         color: $white;
-        background-color: $complementary;
-        border-color: $complementary;
+        background-color: $secondary-300;
+        border-color: $secondary-300;
 
         &:hover {
             color: $white;
-            background-color: darken($complementary, 8%);
-            border-color: darken($complementary, 4%);
+            background-color: $secondary-400;
+            border-color: $secondary-400;
         }
     }
 }

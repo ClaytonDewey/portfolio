@@ -24,7 +24,7 @@
 @import "layout/footer";
 
 main section:nth-child(odd) {
-    background-color: darken($white, 10%);
+    background-color: $primary-100;
 }
 
 #about,
