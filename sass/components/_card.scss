@@ -1,7 +1,7 @@
 .mdc {
 
   &-card {
-    padding: 1rem;
+    // padding: 1rem;
     margin: 1rem 1rem 4rem;
     border-radius: 4px;
     background-color: $white;
@@ -18,17 +18,23 @@
     &--header {
       padding: 1.5rem;
       color: $primary-300;
+      background-color: $gray-100;
       border-bottom: 1px solid $gray-300;
       margin-bottom: 1rem;
-    }
 
-    &--body {
       img {
         display: block;
         width: 100%;
         margin: auto;
         height: auto;
         padding: 1rem;
+      }
+    }
+
+    &--body {
+      padding: 1rem;
+      h3 {
+        margin-bottom: 1.5rem;
       }
     }
 
