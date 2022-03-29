@@ -1,32 +1,32 @@
 {
-  "name": "front-end",
-  "version": "1.0.0",
-  "description": "Front End Developer Portfolio site.",
-  "main": "index.js",
-  "scripts": {
-    "watch:sass": "node-sass sass/main.scss css/style.css -w --souce-map true",
-    "devserver": "live-server",
-    "start": "npm-run-all --parallel devserver watch:sass",
-    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
-    "concat:css": "concat -o css/style.concat.css css/style.comp.css",
-    "prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" css/style.concat.css -o css/style.prefix.css",
-    "compress:css": "node-sass css/style.prefix.css css/style.min.css --output-style compressed",
-    "build:css": "npm-run-all compile:sass concat:css prefix:css compress:css"
-  },
-  "author": "Clayton Dewey",
-  "license": "ISC",
-  "dependencies": {
-    "live-server": "^1.2.1"
-  },
-  "devDependencies": {
-    "autoprefixer": "^10.2.5",
-    "concat": "^1.0.3",
-    "node-sass": "^6.0.0",
-    "npm-run-all": "^4.1.5",
-    "parcel-bundler": "^1.10.3",
-    "postcss": "^8.2.15",
-    "postcss-cli": "^8.3.1",
-    "prettier": "^2.3.0",
-    "uglify-js": "^3.13.6"
-  }
+    "name": "front-end",
+    "version": "1.0.0",
+    "description": "Front End Developer Portfolio site.",
+    "main": "index.js",
+    "scripts": {
+        "watch:sass": "sass sass/main.scss css/style.css",
+        "devserver": "live-server",
+        "start": "npm-run-all --parallel devserver watch:sass",
+        "compile:sass": "sass sass/main.scss css/style.comp.css",
+        "concat:css": "concat -o css/style.concat.css css/style.comp.css",
+        "prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" css/style.concat.css -o css/style.prefix.css",
+        "compress:css": "sass css/style.prefix.css css/style.min.css --output-style compressed",
+        "build:css": "npm-run-all compile:sass concat:css prefix:css compress:css"
+    },
+    "author": "Clayton Dewey",
+    "license": "ISC",
+    "dependencies": {
+        "live-server": "^1.2.1"
+    },
+    "devDependencies": {
+        "autoprefixer": "^10.2.5",
+        "concat": "^1.0.3",
+        "npm-run-all": "^4.1.5",
+        "parcel-bundler": "^1.10.3",
+        "postcss": "^8.2.15",
+        "postcss-cli": "^8.3.1",
+        "prettier": "^2.3.0",
+        "sass": "^1.49.9",
+        "uglify-js": "^3.13.6"
+    }
 }
